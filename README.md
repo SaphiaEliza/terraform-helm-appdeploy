@@ -29,6 +29,7 @@ module name {
   namespace  = "default"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "ingress-nginx-controller"
+  wait       = false 
 }
 ```
 
