@@ -26,10 +26,12 @@ provider "helm" {
 module name {
   source     = "SaphiaEliza/appdeploy/helm"
   name       = "nginx-ingress-controller"
+  namespace  = "default"
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "ingress-nginx-controller"
 }
 ```
+
 #### Run below command
 ``` 
 terraform init
