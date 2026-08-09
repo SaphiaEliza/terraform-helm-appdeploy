@@ -30,6 +30,14 @@ module name {
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "ingress-nginx-controller"
   wait       = false 
+  
+  values     = [<<-EOF
+  
+replicaCount = 1
+
+  EOF
+  ]
+
 }
 ```
 
